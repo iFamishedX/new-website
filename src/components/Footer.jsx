@@ -1,7 +1,7 @@
 const socials = [
-  { label: "GitHub", href: "https://github.com/" },
-  { label: "Modrinth", href: "https://modrinth.com/" },
-  { label: "Discord", href: "https://discord.com/" },
+  { label: "GitHub", href: "https://github.com/iFamishedX" },
+  { label: "Modrinth", href: "https://modrinth.com/user/iFamished" },
+  { label: "Discord", href: "https://discord.com/users/iFamished" },
 ]
 
 export default function Footer() {
@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="footer-copy">
-          © {new Date().getFullYear()} iFamished. Built with React + Router.
+          © {new Date().getFullYear()} iFamished. All rights reserved.
         </p>
       </div>
     </footer>

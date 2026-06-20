@@ -17,7 +17,7 @@
     transform 0.35s var(--ease),
     border-color 0.35s var(--ease),
     box-shadow 0.35s var(--ease),
-    background 0.35s var(--ease);
+    background-color 0.35s var(--ease)
 }
 
 /* Subtle top highlight */
@@ -97,7 +97,7 @@
   color: var(--text-primary);
   transition:
     transform 0.25s var(--ease),
-    background 0.25s var(--ease),
+    background-color 0.35s var(--ease)
     border-color 0.25s var(--ease),
     box-shadow 0.25s var(--ease);
   position: relative;
@@ -182,7 +182,7 @@
   border-radius: var(--radius-md);
   box-shadow: var(--glass-shadow);
   margin: var(--space-2) var(--space-2) 0;
-  transition: background 0.3s var(--ease);
+  transition: background-color 0.3s var(--ease);
 }
 
 .navbar-brand {
@@ -218,7 +218,7 @@
   font-weight: 500;
   padding: 8px 16px;
   border-radius: var(--radius-sm);
-  transition: color 0.25s var(--ease), background 0.25s var(--ease);
+  transition: color 0.25s var(--ease), background-color 0.25s var(--ease);
 }
 
 .navbar-link:hover {
@@ -396,7 +396,7 @@
   flex-wrap: wrap;
   gap: 6px;
   margin-bottom: var(--space-2);
-}
+}\
 
 .tech-tag {
   font-family: var(--mono);
@@ -539,55 +539,41 @@
   position: relative;
   max-width: 720px;
   margin: 0 auto;
-  padding-left: var(--space-4);
+  padding-left: 48px; /* space for line + dot */
 }
 
+/* Vertical line */
 .timeline::before {
   content: "";
   position: absolute;
-  left: 8px;
-  top: 8px;
-  bottom: 8px;
+  left: 24px; /* center anchor for both line and dot */
+  top: 0;
+  bottom: 0;
   width: 2px;
   background: linear-gradient(to bottom, var(--neon-cyan), transparent);
 }
 
+/* Timeline item */
 .timeline-item {
   position: relative;
   margin-bottom: var(--space-3);
-  padding-left: var(--space-3);
+  padding-left: 32px;
 }
 
+/* Dot */
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -26px;
+  left: 24px; /* EXACT same as line */
   top: 6px;
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: var(--glass-bg-strong);
   backdrop-filter: blur(12px);
   border: 2px solid var(--neon-cyan);
   box-shadow: 0 0 14px var(--neon-glow);
-}
-
-.timeline-item h3 {
-  color: var(--text-primary);
-  margin-bottom: 4px;
-}
-
-.timeline-item .timeline-meta {
-  color: var(--text-muted);
-  font-size: 0.8rem;
-  font-family: var(--mono);
-  margin-bottom: var(--space-1);
-  display: block;
-}
-
-.timeline-item p {
-  color: var(--text-secondary);
-  font-size: 0.92rem;
+  transform: translate(-50%, 0); /* centers dot on the line */
 }
 
 /* ----- Contact form ----- */
