@@ -4,27 +4,27 @@ const timeline = [
   {
     year: "Started",
     title: "Minecraft Modding",
-    text: "Began crafting client-side mods and performance patches for Fabric-based setups.",
+    text: "Began building client-side enhancements, performance patches, and QoL mods for Fabric-based environments.",
   },
   {
     year: "Growth",
     title: "Plugin Development",
-    text: "Moved into server-side tooling with lightweight multiloader bridges and command APIs.",
+    text: "Expanded into server-side tooling with lightweight multiloader bridges, command APIs, and backend utilities.",
   },
   {
     year: "Scaling",
     title: "Server Infrastructure",
-    text: "Designed automation pipelines and remote-control endpoints for SMP backends.",
+    text: "Designed automation pipelines, remote execution endpoints, and monitoring tools for SMP and production servers.",
   },
   {
     year: "Automation",
     title: "Cloudflare Automation",
-    text: "Wired up edge automation, DNS routing, and proxy tooling to keep infra fast and secure.",
+    text: "Built edge automation, DNS routing systems, and proxy workflows to keep infrastructure fast, secure, and resilient.",
   },
   {
     year: "Today",
     title: "Open-Source Release",
-    text: "Shipping HungerBridge, HungerLib, and MapRes alongside community SMP hosting.",
+    text: "Maintaining HungerBridge, HungerLib, MapRes, and supporting community-driven SMP hosting and tooling.",
   },
 ]
 
@@ -43,20 +43,20 @@ export default function About() {
           <p className="profile-tagline">Developer · Creator · Minecraft builder</p>
           <div className="profile-bio">
             <p>
-              I build Minecraft tooling that spans client enhancements, plugin
-              development, and full server infrastructure. My work focuses on the
-              multiloader ecosystem — Fabric, Paper, Purpur, Quilt, and NeoForge —
-              with an emphasis on performance, stability, and clean automation.
+              I build tooling across the Minecraft ecosystem — from client-side enhancements
+              to server plugins and full backend infrastructure. My work spans Fabric, Paper,
+              Purpur, Quilt, and NeoForge, with a focus on performance, stability, and clean,
+              predictable automation.
             </p>
             <p>
-              Recent focus has been on Minecraft modding and plugin development
-              through projects like HungerBridge and HungerLib, building async
-              tooling that turns remote server control into a first-class API.
+              Recent work includes HungerBridge and HungerLib, a multiloader bridge and Python
+              library that turn remote server control into a structured, scriptable API for
+              dashboards, automation, and orchestration.
             </p>
             <p>
-              On the infrastructure side, I run Cloudflare automation for edge
-              routing and proxy management, keeping servers fast, observable,
-              and resilient under load.
+              On the infrastructure side, I manage Cloudflare-based automation for routing,
+              proxying, and edge logic, keeping servers fast, observable, and resilient under
+              real-world load.
             </p>
           </div>
         </GlassCard>

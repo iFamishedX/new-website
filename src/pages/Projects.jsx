@@ -5,103 +5,67 @@ const projects = [
   {
     name: "HungerBridge",
     description:
-      "Lightweight multiloader HTTP bridge for Minecraft servers. Secure run, log, and ping endpoints built for automation, dashboards, and remote control.",
-    stack: ["Fabric", "Paper", "Purpur", "Quilt"],
+      "A lightweight multiloader HTTP bridge for Minecraft servers. Provides secure run, log, and ping endpoints for automation, dashboards, and remote control.",
+    stack: ["Fabric", "Paper", "Purpur", "Quilt", "Folia"],
     features: [
       "Secure /run, /log, /ping endpoints",
-      "Built for automation, dashboards, remote control",
+      "Zero-noise, automation-focused design",
+      "Ideal for dashboards and remote server tooling",
     ],
-    github: "https://github.com/",
-    modrinth: "https://modrinth.com/",
+    github: "https://github.com/iFamishedX/HungerBridge",
+    modrinth: "https://modrinth.com/project/hungerbridge",
   },
   {
     name: "HungerLib",
     description:
-      "Python library for interacting with HungerBridge. Async and sync clients for command execution, log streaming, and status polling.",
-    stack: ["Python", "Async", "Sync"],
+      "A Python library mainly for interacting with Minecraft servers. Clients for command execution, log streaming, and server status polling.",
+    stack: ["Python", "Library", "API"],
     features: [
-      "Async + sync clients",
-      "Command execution, log streaming, status polling",
+      "Command execution and log streaming",
+      "Pterodactyl Panel integration",
+      "Clean API and codebase, ideal for automation and scripting",
+      "Server status polling",
+      "Lightweight and easy to integrate",
     ],
-    github: "https://github.com/",
-    modrinth: "https://modrinth.com/",
+    github: "https://github.com/iFamishedX/HungerLib",
+    pypi: "https://pypi.org/project/hungerlib/",
   },
   {
     name: "MapRes",
     description:
-      "Fast Minecraft world map renderer. High-resolution output with custom palettes, optimized for SMPs and world archives.",
-    stack: ["Renderer", "High-Res", "Custom Palettes"],
+      "A fast, modern string mapping Python library designed with scalability in mind.",
+    stack: ["Python", "Utility"],
     features: [
-      "High-resolution output",
-      "Custom palettes",
-      "Optimized for SMPs and archives",
+      "Optimized for speed and low memory usage",
     ],
-    github: "https://github.com/",
-    modrinth: "https://modrinth.com/",
+    github: "https://github.com/iFamishedX/mapres",
+    pypi: "https://pypi.org/project/mapres/",
   },
   {
     name: "OptiFine for Fabric",
     description:
-      "Modern OptiFine alternative for Fabric. Performance improvements, visual enhancements, and shader support where applicable.",
+      "A modern OptiFine alternative built natively for Fabric. Provides performance boosts, visual enhancements, and shader support where applicable.",
     stack: ["Fabric", "Performance", "Shaders"],
     features: [
-      "Performance improvements",
-      "Visual enhancements",
+      "Performance enhancements",
+      "Visual improvements",
       "Shader support (where applicable)",
     ],
-    github: "https://github.com/",
-    modrinth: "https://modrinth.com/",
-  },
-  {
-    name: "OptiFine for NeoForge",
-    description:
-      "NeoForge-compatible version. Modpack-friendly with a focus on stability and performance.",
-    stack: ["NeoForge", "Modpack", "Stability"],
-    features: [
-      "Modpack-friendly",
-      "Stability + performance focus",
-    ],
-    github: "https://github.com/",
-    modrinth: "https://modrinth.com/",
-  },
-  {
-    name: "New Moon",
-    description:
-      "Lightweight client-side enhancement mod. UI improvements, visual polish, and quality-of-life features.",
-    stack: ["Client", "UI", "QoL"],
-    features: [
-      "UI improvements",
-      "Visual polish",
-      "QoL features",
-    ],
-    github: "https://github.com/",
-    modrinth: "https://modrinth.com/",
-  },
-  {
-    name: "Raven Client",
-    description:
-      "Custom client project with PvP-oriented enhancements. Clean UI, optimized rendering, and a lightweight footprint.",
-    stack: ["Client", "PvP", "Lightweight"],
-    features: [
-      "Clean UI",
-      "Optimized rendering",
-      "Lightweight",
-    ],
-    github: "https://github.com/",
-    modrinth: "https://modrinth.com/",
+    github: "https://github.com/iFamishedX/optifine-for-fabric",
+    modrinth: "https://modrinth.com/project/optifine-for-fabric",
   },
   {
     name: "The Hunger SMP",
     description:
-      "Semi-anarchy Minecraft server. Minimal rules, performance-tuned, powered by HungerBridge and HungerLib.",
+      "A semi-anarchy Minecraft server focused on performance and minimal rules. Powered by custom tooling including HungerBridge and HungerLib.",
     stack: ["SMP", "Semi-Anarchy", "Performance"],
     features: [
-      "Minimal rules",
-      "Performance-tuned",
-      "Powered by HungerBridge + HungerLib",
+      "Minimal rules, high freedom",
+      "Performance-tuned server environment",
+      "Custom backend tooling",
     ],
-    github: "https://github.com/",
-    modrinth: "https://modrinth.com/",
+    website: "https://hungersmp.com/",
+    modrinth: "https://modrinth.com/server/the-hunger-smp",
   },
 ]
 
@@ -138,9 +102,24 @@ export default function Projects() {
                 <GlassButton href={p.github} size="sm" target="_blank" rel="noopener noreferrer">
                   GitHub
                 </GlassButton>
-                <GlassButton href={p.modrinth} size="sm" variant="primary">
-                  Modrinth
-                </GlassButton>
+
+                {p.modrinth && (
+                  <GlassButton href={p.modrinth} size="sm" variant="primary">
+                    Modrinth
+                  </GlassButton>
+                )}
+
+                {p.pypi && (
+                  <GlassButton href={p.pypi} size="sm" variant="primary">
+                    PyPI
+                  </GlassButton>
+                )}
+
+                {p.website && (
+                  <GlassButton href={p.website} size="sm" variant="primary">
+                    Website
+                  </GlassButton>
+                )}
               </div>
             </GlassCard>
           ))}
