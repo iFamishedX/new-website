@@ -3,9 +3,9 @@ import GlassCard from "../components/GlassCard"
 import GlassButton from "../components/GlassButton"
 
 const socials = [
-  { label: "GitHub", href: "https://github.com/", emoji: "↗" },
-  { label: "Modrinth", href: "https://modrinth.com/", emoji: "↗" },
-  { label: "Discord", href: "https://discord.com/", emoji: "↗" },
+  { label: "GitHub", href: "https://github.com/iFamishedX", emoji: "↗" },
+  { label: "Modrinth", href: "https://modrinth.com/iFamished", emoji: "↗" },
+  { label: "Discord", href: "https://discord.com/user/iFamished", emoji: "↗" },
 ]
 
 export default function Contact() {
