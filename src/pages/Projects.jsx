@@ -36,7 +36,7 @@ const projects = [
       "A fast, modern string mapping Python library designed with scalability in mind.",
     stack: ["Python", "Utility"],
     features: [
-      "Optimized for speed and low memory usage",
+      "Optimized for speed and low memory usage"
     ],
     github: "https://github.com/iFamishedX/mapres",
     pypi: "https://pypi.org/project/mapres/",
@@ -99,9 +99,16 @@ export default function Projects() {
               </ul>
 
               <div className="project-links">
-                <GlassButton href={p.github} size="sm" target="_blank" rel="noopener noreferrer">
-                  GitHub
-                </GlassButton>
+                {p.github && (
+                  <GlassButton
+                    href={p.github}
+                    size="sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </GlassButton>
+                )}
 
                 {p.modrinth && (
                   <GlassButton href={p.modrinth} size="sm" variant="primary">
