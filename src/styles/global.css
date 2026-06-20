@@ -46,10 +46,8 @@
 
 html {
   scroll-behavior: smooth;
-
-  /* prevent white overscroll flash */
   overscroll-behavior: none;
-  background: #000;
+  background: #000; /* black fallback for overscroll */
 }
 
 body {
@@ -63,9 +61,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 
-  /* ensure no white background ever shows */
   overscroll-behavior: none;
-  background: #000;
+  background: transparent;
 }
 
 /* Global gradient background: deep blue → purple → black */
