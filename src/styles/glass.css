@@ -539,14 +539,14 @@
   position: relative;
   max-width: 720px;
   margin: 0 auto;
-  padding-left: 48px; /* space for line + dot */
+  padding-left: 40px; /* balanced spacing */
 }
 
 /* Vertical line */
 .timeline::before {
   content: "";
   position: absolute;
-  left: 24px; /* center anchor for both line and dot */
+  left: 20px; /* anchor point */
   top: 0;
   bottom: 0;
   width: 2px;
@@ -557,17 +557,17 @@
 .timeline-item {
   position: relative;
   margin-bottom: var(--space-3);
-  padding-left: 32px;
+  padding-left: 28px; /* aligns text nicely */
 }
 
 /* Dot */
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: 24px; /* EXACT same as line */
+  left: 20px; /* EXACT same anchor as line */
   top: 6px;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background: var(--glass-bg-strong);
   backdrop-filter: blur(12px);
