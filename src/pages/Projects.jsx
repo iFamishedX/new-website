@@ -1,5 +1,4 @@
-import GlassCard from "../components/GlassCard"
-import GlassButton from "../components/GlassButton"
+import { GlassCard, GlassButton } from "ifamished-ui"
 
 const projects = [
   {

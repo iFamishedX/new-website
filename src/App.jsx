@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
+import { Navbar, Footer } from "ifamished-ui"
+
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Projects from "./pages/Projects"

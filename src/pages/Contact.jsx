@@ -1,6 +1,5 @@
 import { useState } from "react"
-import GlassCard from "../components/GlassCard"
-import GlassButton from "../components/GlassButton"
+import { GlassCard, GlassButton } from "ifamished-ui"
 
 const socials = [
   { label: "GitHub", href: "https://github.com/iFamishedX", emoji: "↗" },
@@ -12,10 +11,7 @@ export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
-
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
   const handleSubmit = (e) => {
     e.preventDefault()
     setSubmitted(true)
@@ -39,40 +35,20 @@ export default function Contact() {
           ) : (
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={form.name}
-                  onChange={handleChange}
-                  placeholder="Your name"
-                  required
-                />
+                <label>Name</label>
+                <input name="name" value={form.name} onChange={handleChange} required />
               </div>
+
               <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  placeholder="you@example.com"
-                  required
-                />
+                <label>Email</label>
+                <input name="email" value={form.email} onChange={handleChange} required />
               </div>
+
               <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  placeholder="What's on your mind?"
-                  required
-                />
+                <label>Message</label>
+                <textarea name="message" value={form.message} onChange={handleChange} required />
               </div>
+
               <GlassButton type="submit" variant="primary" block>
                 Send message
               </GlassButton>

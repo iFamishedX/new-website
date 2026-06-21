@@ -1,31 +1,11 @@
-import GlassCard from "../components/GlassCard"
+import { GlassCard } from "ifamished-ui"
 
 const timeline = [
-  {
-    year: "Started",
-    title: "Minecraft Modding",
-    text: "Began building client-side enhancements, performance patches, and QoL mods for Fabric-based environments.",
-  },
-  {
-    year: "Growth",
-    title: "Plugin Development",
-    text: "Expanded into server-side tooling with lightweight multiloader bridges, command APIs, and backend utilities.",
-  },
-  {
-    year: "Scaling",
-    title: "Server Infrastructure",
-    text: "Designed automation pipelines, remote execution endpoints, and monitoring tools for SMP and production servers.",
-  },
-  {
-    year: "Automation",
-    title: "Cloudflare Automation",
-    text: "Built edge automation, DNS routing systems, and proxy workflows to keep infrastructure fast, secure, and resilient.",
-  },
-  {
-    year: "Today",
-    title: "Open-Source Release",
-    text: "Maintaining HungerBridge, HungerLib, MapRes, and supporting community-driven SMP hosting and tooling.",
-  },
+  { year: "Started", title: "Minecraft Modding", text: "Began building client-side enhancements, performance patches, and QoL mods for Fabric-based environments." },
+  { year: "Growth", title: "Plugin Development", text: "Expanded into server-side tooling with lightweight multiloader bridges, command APIs, and backend utilities." },
+  { year: "Scaling", title: "Server Infrastructure", text: "Designed automation pipelines, remote execution endpoints, and monitoring tools for SMP and production servers." },
+  { year: "Automation", title: "Cloudflare Automation", text: "Built edge automation, DNS routing systems, and proxy workflows to keep infrastructure fast, secure, and resilient." },
+  { year: "Today", title: "Open-Source Release", text: "Maintaining HungerBridge, HungerLib, MapRes, and supporting community-driven SMP hosting and tooling." },
 ]
 
 export default function About() {
@@ -41,23 +21,11 @@ export default function About() {
           <div className="profile-avatar" aria-hidden="true">iF</div>
           <h2 className="profile-name">iFamished</h2>
           <p className="profile-tagline">Developer · Creator · Minecraft builder</p>
+
           <div className="profile-bio">
-            <p>
-              I build tooling across the Minecraft ecosystem — from client-side enhancements
-              to server plugins and full backend infrastructure. My work spans Fabric, Paper,
-              Purpur, Quilt, and NeoForge, with a focus on performance, stability, and clean,
-              predictable automation.
-            </p>
-            <p>
-              Recent work includes HungerBridge and HungerLib, a multiloader bridge and Python
-              library that turn remote server control into a structured, scriptable API for
-              dashboards, automation, and orchestration.
-            </p>
-            <p>
-              On the infrastructure side, I manage Cloudflare-based automation for routing,
-              proxying, and edge logic, keeping servers fast, observable, and resilient under
-              real-world load.
-            </p>
+            <p>I build tooling across the Minecraft ecosystem — from client-side enhancements to server plugins and full backend infrastructure...</p>
+            <p>Recent work includes HungerBridge and HungerLib...</p>
+            <p>On the infrastructure side, I manage Cloudflare-based automation...</p>
           </div>
         </GlassCard>
       </section>
@@ -67,6 +35,7 @@ export default function About() {
           <h2>Skills & Milestones</h2>
           <p>How the toolkit came together over time.</p>
         </div>
+
         <div className="timeline stagger">
           {timeline.map((item) => (
             <div key={item.title} className="timeline-item">
