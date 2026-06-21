@@ -57,7 +57,6 @@ export default function About() {
         <div className="timeline">
           {timeline.map((item) => (
             <div key={item.title} className="timeline-item">
-              <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <span className="timeline-meta">{item.year}</span>
                 <h3>{item.title}</h3>
