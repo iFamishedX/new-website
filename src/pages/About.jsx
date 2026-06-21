@@ -23,9 +23,21 @@ export default function About() {
           <p className="profile-tagline">Developer · Creator · Minecraft builder</p>
 
           <div className="profile-bio">
-            <p>I build tooling across the Minecraft ecosystem — from client-side enhancements to server plugins and full backend infrastructure...</p>
-            <p>Recent work includes HungerBridge and HungerLib...</p>
-            <p>On the infrastructure side, I manage Cloudflare-based automation...</p>
+            <p>
+              I build tooling across the Minecraft ecosystem—from client-side enhancements and performance tweaks to server plugins
+              and full backend infrastructure. Most of what I do is about making servers easier to run, automate, and observe, so
+              people can focus on actually playing instead of fighting their stack.
+            </p>
+            <p>
+              Recent work includes projects like HungerBridge and HungerLib, which connect Minecraft servers to external tools,
+              dashboards, and automation workflows. I care a lot about clean APIs, predictable behavior, and making it simple to
+              plug Minecraft into the rest of your infrastructure without a ton of boilerplate.
+            </p>
+            <p>
+              On the infrastructure side, I lean heavily on Cloudflare, Pterodactyl, and custom HTTP bridges to keep things fast,
+              secure, and resilient. That means edge routing, remote execution endpoints, log streaming, and status polling—all
+              wired together so SMPs and production servers can be monitored, controlled, and scaled with confidence.
+            </p>
           </div>
         </GlassCard>
       </section>
