@@ -20,7 +20,7 @@ export default function About() {
         <GlassCard variant="profile" className="fade-in-up">
           <div className="profile-avatar">
             <img
-              src="https://minotar.net/avatar/iFamished/200.png"
+              src="/images/profile.png"
               alt="iFamished Minecraft avatar"
             />
           </div>
