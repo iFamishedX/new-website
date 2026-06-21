@@ -4,8 +4,8 @@ import { BrowserRouter } from "react-router-dom"
 
 // Shared UI package styles
 import "ifamished-ui/styles/globals.css"
-import "ifamished-ui/styles/components.css"
 import "ifamished-ui/styles/themes/cyan.css"
+import "ifamished-ui/styles/components.css"
 
 // Site-specific background styles
 import "./styles/background.css"
