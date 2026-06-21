@@ -98,30 +98,47 @@ export default function Projects() {
               </ul>
 
               <div className="project-links">
-                {p.github && (
-                  <GlassButton href={p.github} size="sm" variant="primary">
-                    GitHub
+                {p.website && (
+                  <GlassButton href={p.website} size="sm" variant="primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9m0-18c-2.5 2.5-4 5.5-4 9s1.5 6.5 4 9m-7-9h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    </svg>
+                    Website
                   </GlassButton>
                 )}
 
                 {p.modrinth && (
                   <GlassButton href={p.modrinth} size="sm" variant="primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <path d="M4 4h16v16H4z" stroke="currentColor" strokeWidth="2"/>
+                      <path d="M8 8h8v8H8z" fill="currentColor"/>
+                    </svg>
                     Modrinth
                   </GlassButton>
                 )}
 
                 {p.pypi && (
                   <GlassButton href={p.pypi} size="sm" variant="primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 2c-2 0-3 .5-3 2v4h6V4c0-1.5-1-2-3-2zM9 8H5c-1.5 0-2 1-2 3v2c0 2 1 3 3 3h3v-8zm6 0h4c1.5 0 2 1 2 3v2c0 2-1 3-3 3h-3v-8z" fill="currentColor"/>
+                    </svg>
                     PyPI
                   </GlassButton>
                 )}
 
-                {p.website && (
-                  <GlassButton href={p.website} size="sm" variant="primary">
-                    Website
+                {p.github && (
+                  <GlassButton href={p.github} size="sm" variant="primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.31 6.84 9.66.5.1.68-.22.68-.48v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.12-1.52-1.12-1.52-.92-.65.07-.64.07-.64 1.02.07 1.56 1.07 1.56 1.07.9 1.58 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0112 6.8c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.57 5.07.36.32.68.94.68 1.9v2.82c0 .26.18.58.69.48A10.3 10.3 0 0022 12.26C22 6.58 17.52 2 12 2z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    GitHub
                   </GlassButton>
                 )}
               </div>
+
             </GlassCard>
           ))}
         </div>
