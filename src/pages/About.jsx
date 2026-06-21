@@ -18,7 +18,12 @@ export default function About() {
 
       <section className="section">
         <GlassCard variant="profile" className="fade-in-up">
-          <div className="profile-avatar" aria-hidden="true">iF</div>
+          <div className="profile-avatar">
+            <img
+              src="https://minotar.net/avatar/iFamished/200.png"
+              alt="iFamished Minecraft avatar"
+            />
+          </div>
           <h2 className="profile-name">iFamished</h2>
           <p className="profile-tagline">Developer · Creator · Minecraft builder</p>
 
