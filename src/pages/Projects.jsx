@@ -99,12 +99,7 @@ export default function Projects() {
 
               <div className="project-links">
                 {p.github && (
-                  <GlassButton
-                    href={p.github}
-                    size="sm"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <GlassButton href={p.github} size="sm" variant="primary">
                     GitHub
                   </GlassButton>
                 )}
