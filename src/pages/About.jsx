@@ -53,12 +53,16 @@ export default function About() {
           <p>How the toolkit came together over time.</p>
         </div>
 
-        <div className="timeline stagger">
+        {/* NEW GRID-BASED TIMELINE */}
+        <div className="timeline">
           {timeline.map((item) => (
             <div key={item.title} className="timeline-item">
-              <span className="timeline-meta">{item.year}</span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <span className="timeline-meta">{item.year}</span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
             </div>
           ))}
         </div>
