@@ -7,14 +7,14 @@ html {
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  background: transparent;
+  background: #000;
   position: relative;
 }
 
 /* Gradient background */
 body::before {
   content: "";
-  position: fixed;
+  position: absolute; /* was fixed */
   inset: 0;
   background: linear-gradient(
     135deg,
@@ -23,20 +23,20 @@ body::before {
     var(--bg-3) 55%,
     var(--bg-4) 100%
   );
-  z-index: -2;
-  background-attachment: fixed;
+  z-index: -1; /* was -2 */
+  /* background-attachment: fixed; */
 }
 
 /* Ambient glows */
 body::after {
   content: "";
-  position: fixed;
+  position: absolute; /* was fixed */
   inset: 0;
   background:
     radial-gradient(circle at 15% 20%, var(--glow-1) 0%, transparent 45%),
     radial-gradient(circle at 85% 30%, var(--glow-2) 0%, transparent 45%),
     radial-gradient(circle at 50% 85%, var(--glow-3) 0%, transparent 50%);
-  z-index: -1;
+  z-index: -1; /* same layer as before */
   pointer-events: none;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
