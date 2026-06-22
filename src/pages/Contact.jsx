@@ -66,7 +66,7 @@ const links = [
     href: "https://optifineforfabric.com",
     description: "Home of OptiFine for Fabric.",
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
         <path d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9m0-18c-2.5 2.5-4 5.5-4 9s1.5 6.5 4 9m-7-9h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
       </svg>
     ),
@@ -76,7 +76,7 @@ const links = [
     href: "https://hungersmp.com",
     description: "The Hunger SMP — semi‑anarchy, performance‑tuned.",
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
         <path d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9m0-18c-2.5 2.5-4 5.5-4 9s1.5 6.5 4 9m-7-9h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
       </svg>
     ),
