@@ -13,7 +13,7 @@ const links = [
   },
   {
     label: "Email",
-    href: "mailto:contact@ifamished.dev",
+    href: "mailto:me@ifamished.com",
     description: "For longer thoughts, proposals, or anything detailed.",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
@@ -66,9 +66,8 @@ const links = [
     href: "https://optifineforfabric.com",
     description: "Home of OptiFine for Fabric.",
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" strokeWidth="2"/>
-        <path d="M9 15.5 11.5 9 15 15.5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9m0-18c-2.5 2.5-4 5.5-4 9s1.5 6.5 4 9m-7-9h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
       </svg>
     ),
   },
@@ -77,9 +76,8 @@ const links = [
     href: "https://hungersmp.com",
     description: "The Hunger SMP — semi‑anarchy, performance‑tuned.",
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" strokeWidth="2"/>
-        <path d="M7 13h4M7 10h6M7 16h3" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"/>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9m0-18c-2.5 2.5-4 5.5-4 9s1.5 6.5 4 9m-7-9h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
       </svg>
     ),
   },
