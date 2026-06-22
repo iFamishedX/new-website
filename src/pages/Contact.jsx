@@ -1,66 +1,70 @@
-import { useState } from "react"
 import { GlassCard, GlassButton } from "ifamished-ui"
 
-const socials = [
-  { label: "GitHub", href: "https://github.com/iFamishedX", emoji: "↗" },
-  { label: "Modrinth", href: "https://modrinth.com/user/iFamished", emoji: "↗" },
-  { label: "Discord", href: "https://discord.com/users/iFamished", emoji: "↗" },
-]
-
 export default function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" })
-  const [submitted, setSubmitted] = useState(false)
-
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setSubmitted(true)
-    setForm({ name: "", email: "", message: "" })
-  }
+  const links = [
+    {
+      label: "Discord",
+      href: "https://discord.com/users/iFamished",
+      icon: (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.317 4.369a19.91 19.91 0 0 0-4.885-1.515.07.07 0 0 0-.073.035c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.4 0 12.64 12.64 0 0 0-.617-1.25.07.07 0 0 0-.073-.035 19.9 19.9 0 0 0-4.885 1.515.064.064 0 0 0-.03.025C2.02 9.04 1.37 13.58 1.662 18.063a.08.08 0 0 0 .03.056 19.96 19.96 0 0 0 5.993 3.03.07.07 0 0 0 .076-.025c.462-.63.874-1.295 1.226-1.994a.07.07 0 0 0-.038-.098 13.1 13.1 0 0 1-1.872-.878.07.07 0 0 1-.007-.116c.126-.094.252-.19.372-.287a.07.07 0 0 1 .073-.01c3.927 1.793 8.18 1.793 12.062 0a.07.07 0 0 1 .074.009c.12.098.246.194.373.288a.07.07 0 0 1-.006.116 12.3 12.3 0 0 1-1.873.878.07.07 0 0 0-.037.099c.36.698.773 1.362 1.225 1.993a.07.07 0 0 0 .076.025 19.9 19.9 0 0 0 6.002-3.03.07.07 0 0 0 .03-.055c.5-6.43-.838-10.946-3.548-13.67a.06.06 0 0 0-.03-.026ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.419 0 1.334-.955 2.419-2.157 2.419Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.419 0 1.334-.947 2.419-2.157 2.419Z"/>
+        </svg>
+      ),
+    },
+    {
+      label: "Email",
+      href: "mailto:contact@ifamished.dev",
+      icon: (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4 4h16a2 2 0 0 1 2 2v1l-10 6L2 7V6a2 2 0 0 1 2-2Zm18 5.236v8.764a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.236l10 6 10-6Z"/>
+        </svg>
+      ),
+    },
+    {
+      label: "GitHub",
+      href: "https://github.com/iFamishedX",
+      icon: (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.31 6.84 9.66.5.1.68-.22.68-.48v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.12-1.52-1.12-1.52-.92-.65.07-.64.07-.64 1.02.07 1.56 1.07 1.56 1.07.9 1.58 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.8c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.57 5.07.36.32.68.94.68 1.9v2.82c0 .26.18.58.69.48A10.3 10.3 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
+        </svg>
+      ),
+    },
+    {
+      label: "Modrinth",
+      href: "https://modrinth.com/user/iFamished",
+      icon: (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.252.004a11.78 11.768 0 0 0-8.92 3.73a11 11 0 0 0-2.17 3.11a11.37 11.359 0 0 0-1.16 5.169c0 1.42.17 2.5.6 3.77c.24.759.77 1.899 1.17 2.529a12.3 12.298 0 0 0 8.85 5.639c.44.05 2.54.07 2.76.02c.2-.04.22.1-.26-1.7l-.36-1.37l-1.01-.06a8.5 8.489 0 0 1-5.18-1.8a5.3 5.3 0 0 1-1.3-1.26c0-.05.34-.28.74-.5a37.572 37.545 0 0 1 2.88-1.629c.03 0 .5.45 1.06.98l1 .97l2.07-.43l2.06-.43l1.47-1.47c.8-.8 1.48-1.5 1.48-1.52c0-.09-.42-1.63-.46-1.7c-.04-.06-.2-.03-1.02.18c-.53.13-1.2.3-1.45.4l-.48.15l-.53.53l-.53.53l-.93.1l-.93.07l-.52-.5a2.7 2.7 0 0 1-.96-1.7l-.13-.6l.43-.57c.68-.9.68-.9 1.46-1.1c.4-.1.65-.2.83-.33c.13-.099.65-.579 1.14-1.069l.9-.9l-.7-.7l-.7-.7l-1.95.54c-1.07.3-1.96.53-1.97.53c-.03 0-2.23 2.48-2.63 2.97l-.29.35l.28 1.03c.16.56.3 1.16.31 1.34l.03.3l-.34.23c-.37.23-2.22 1.3-2.84 1.63c-.36.2-.37.2-.44.1c-.08-.1-.23-.6-.32-1.03c-.18-.86-.17-2.75.02-3.73a8.84 8.84 0 0 1 7.9-6.93c.43-.03.77-.08.78-.1c.06-.17.5-2.999.47-3.039c-.01-.02-.1-.02-.2-.03Z"/>
+        </svg>
+      ),
+    },
+    {
+      label: "Website",
+      href: "https://ifamished.dev",
+      icon: (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9m0-18c-2.5 2.5-4 5.5-4 9s1.5 6.5 4 9m-7-9h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      ),
+    },
+  ]
 
   return (
     <div className="page">
       <div className="page-header fade-in-up">
         <h1>Contact</h1>
-        <p>Reach out for collaboration, feature requests, or project questions.</p>
+        <p>Find me across the web — wherever you prefer to reach out.</p>
       </div>
 
       <section className="section">
-        <GlassCard variant="contact" className="fade-in-up">
-          {submitted ? (
-            <div style={{ textAlign: "center", padding: "16px 0" }}>
-              <h3 style={{ marginBottom: "8px" }}>Thanks!</h3>
-              <p className="text-muted">Your message has been recorded.</p>
-            </div>
-          ) : (
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label>Name</label>
-                <input name="name" value={form.name} onChange={handleChange} required />
-              </div>
-
-              <div className="form-group">
-                <label>Email</label>
-                <input name="email" value={form.email} onChange={handleChange} required />
-              </div>
-
-              <div className="form-group">
-                <label>Message</label>
-                <textarea name="message" value={form.message} onChange={handleChange} required />
-              </div>
-
-              <GlassButton type="submit" variant="primary" block>
-                Send message
+        <div className="contact-socials fade-in-up">
+          {links.map((link) => (
+            <GlassCard key={link.label} className="contact-card">
+              <GlassButton href={link.href} variant="primary" block>
+                {link.icon}
+                {link.label}
               </GlassButton>
-            </form>
-          )}
-        </GlassCard>
-
-        <div className="contact-socials">
-          {socials.map((s) => (
-            <GlassButton key={s.label} href={s.href} variant="ghost" size="sm">
-              {s.label} {s.emoji}
-            </GlassButton>
+            </GlassCard>
           ))}
         </div>
       </section>
