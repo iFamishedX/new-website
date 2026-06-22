@@ -42,7 +42,7 @@ body::after {
   /* background-attachment: fixed; */
 }
 
-#root, .page, .container {
+#root, .page {
   position: relative;
   z-index: 1;
 }
