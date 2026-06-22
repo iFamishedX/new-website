@@ -12,14 +12,14 @@ const overview = [
     text: "Mods, datapacks, client enhancements, and OptiFine alternatives.",
   },
   {
-    icon: "🖧",
+    icon: "⧉",
     title: "Server Infrastructure",
     text: "Automation, performance tuning, and open-source tooling powering SMP backends.",
   },
   {
     icon: "✦",
     title: "Community Involvement",
-    text: "Semi-anarchy servers, PvP servers, open-source releases, and bridges to the wider scene.",
+    text: "Semi-anarchy servers, PvP servers, open-source releases, and innovative projects to the wider scene.",
   },
 ]
 

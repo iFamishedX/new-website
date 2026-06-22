@@ -25,11 +25,11 @@ export default function About() {
             />
           </div>
           <h2 className="profile-name">iFamished</h2>
-          <p className="profile-tagline">Developer · Creator · Minecraft builder</p>
+          <p className="profile-tagline">Developer · Creator · Minecrafter</p>
 
           <div className="profile-bio">
             <p>
-              I build tooling across the Minecraft ecosystem—from client-side enhancements and performance tweaks to server plugins
+              I build tooling across the Minecraft ecosystem — from client-side enhancements and performance tweaks to server plugins
               and full backend infrastructure. Most of what I do is about making servers easier to run, automate, and observe, so
               people can focus on actually playing instead of fighting their stack.
             </p>
@@ -39,8 +39,8 @@ export default function About() {
               plug Minecraft into the rest of your infrastructure without a ton of boilerplate.
             </p>
             <p>
-              On the infrastructure side, I lean heavily on Cloudflare, Pterodactyl, and custom HTTP bridges to keep things fast,
-              secure, and resilient. That means edge routing, remote execution endpoints, log streaming, and status polling—all
+              On the infrastructure side, I lean heavily on Cloudflare, Pterodactyl, and custom projects to keep things fast,
+              secure, and resilient. That means edge routing, remote execution endpoints, log streaming, and status polling — all
               wired together so SMPs and production servers can be monitored, controlled, and scaled with confidence.
             </p>
           </div>
