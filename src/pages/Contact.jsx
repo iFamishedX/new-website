@@ -127,7 +127,7 @@ export default function Contact() {
                     alignItems: "center",
                     justifyContent: "center",
                     background:
-                      "radial-gradient(circle at top, rgba(34,211,238,0.25), transparent 70%)",
+                      "radial-gradient(circle at center, rgba(34,211,238,0.25), transparent 70%)",
                   }}
                 >
                   {link.icon}
