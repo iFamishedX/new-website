@@ -1,4 +1,4 @@
-import { GlassCard, GlassButton } from "ifamished-ui"
+import { GlassCard, GlassButton, usePageTitle } from "ifamished-ui"
 
 const projects = [
   {
@@ -69,6 +69,8 @@ const projects = [
 ]
 
 export default function Projects() {
+  usePageTitle("iFamished | Projects")
+
   return (
     <div className="page">
       <div className="page-header fade-in-up">

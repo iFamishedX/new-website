@@ -1,4 +1,4 @@
-import { GlassCard, GlassButton } from "ifamished-ui"
+import { GlassCard, GlassButton, usePageTitle } from "ifamished-ui"
 
 const links = [
   {
@@ -84,6 +84,8 @@ const links = [
 ]
 
 export default function Contact() {
+  usePageTitle("iFamished | Contact")
+
   return (
     <div className="page">
       <div className="page-header fade-in-up">

@@ -1,4 +1,4 @@
-import { GlassCard } from "ifamished-ui"
+import { GlassCard, usePageTitle } from "ifamished-ui"
 
 const timeline = [
   { year: "Started", title: "Minecraft Modding", text: "Began building client-side enhancements, performance patches, and QoL mods for Fabric-based environments." },
@@ -9,6 +9,8 @@ const timeline = [
 ]
 
 export default function About() {
+  usePageTitle("iFamished | About")
+  
   return (
     <div className="page">
       <div className="page-header fade-in-up">

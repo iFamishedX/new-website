@@ -1,4 +1,4 @@
-import { GlassCard, GlassButton } from "ifamished-ui"
+import { GlassCard, GlassButton, usePageTitle } from "ifamished-ui"
 
 const overview = [
   {
@@ -24,6 +24,8 @@ const overview = [
 ]
 
 export default function Home() {
+  usePageTitle("iFamished | Home")
+
   return (
     <div className="page">
       <section className="section">
