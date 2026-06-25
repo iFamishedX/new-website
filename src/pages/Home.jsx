@@ -24,8 +24,7 @@ const overview = [
 ]
 
 const tech = [
-  "Fabric", "Paper", "Purpur", "NeoForge", "Quilt",
-  "Sodium", "Iris", "Starlight", "Docker", "Cloudflare"
+    "Python", "Docker", "Cloudflare", "Linux", "Minecraft"
 ]
 
 const stats = [
@@ -36,7 +35,7 @@ const stats = [
 ]
 
 export default function Home() {
-  usePageTitle("iFamished | Home")
+  usePageTitle("iFamished")
 
   return (
     <div className="page">
