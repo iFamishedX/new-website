@@ -1,5 +1,4 @@
-import { GlassCard, GlassButton, usePageTitle, StatPill } from "ifamished-ui"
-import Icon from "../components/Icon"
+import { GlassCard, GlassButton, usePageTitle, StatPill, Icon } from "ifamished-ui"
 
 const overview = [
   {
