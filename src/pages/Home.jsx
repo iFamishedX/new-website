@@ -47,7 +47,7 @@ export default function Home() {
 
           <div className="hero-eyebrow">
             <span className="hero-eyebrow-dot" />
-            Developer • Creator • Infrastructure Engineer
+            Developer — Creator — Infrastructure Engineer
           </div>
 
           <h1 className="hero-name">
