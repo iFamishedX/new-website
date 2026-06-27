@@ -99,8 +99,8 @@ export default function Home() {
         </div>
 
         <div className="overview-grid stagger">
-          {overview.map(({ icon, title, text }) => (
-            <GlassCard key={title} className="overview-card">
+          {overview.map(({ icon, title, text }, i) => (
+            <GlassCard key={title} className="overview-card" style={{ "--i": i }}>
               <div className="icon-badge">
                 <Icon name={icon} size={22} strokeWidth={1.75} />
               </div>
